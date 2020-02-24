@@ -1,0 +1,141 @@
+/* Main */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #000000;
+    font-family: 'Roboto', 'Arial';
+    text-align: center;
+}
+
+.star-wars-app {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+.app-header {
+    padding: 100px 0 40px;
+}
+
+.app-header img {
+    width: 350px;
+}
+
+/* Body */
+.revelation-btn button {
+    background: #ffe61a;
+    border: 0;
+    border-radius: 8px;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 95px;
+    cursor: pointer;
+    box-shadow: 0 0 35px rgba(255, 255, 255, .4);
+    position: relative;
+    outline: none;
+}
+.revelation-btn button:hover {
+    bottom: -5px;
+    background: #fcec51;
+}
+.revelation-btn button:hover:after {
+    bottom: -11px;
+}
+
+.revelation-btn button:after {
+    content: '';
+    display: block;
+    height: 30px;
+    background: #b5a106;
+    position: absolute;
+    bottom: -16px;
+    width: 100%;
+    z-index: -1;
+    border-radius: 8px;
+    box-shadow: 0 0 35px rgba(255, 255, 255, .3);
+    left: 0;
+}
+
+.revelation-btn button.active {
+    bottom: -11px;
+    background: #fcec51;
+    color: #C2AE00;
+}
+
+.revelation-btn button.active:after {
+    bottom: -5px;
+}
+
+.star {
+    transform: translateY(5px);
+    margin: 0 25px;
+    font-size: 40px;
+}
+
+.loading-anim {
+    padding: 70px 0 40px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.loading-anim img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+.films-qas {
+    padding: 70px 0 0;
+    color: #fff;
+    font-size: 23px;
+    font-weight: 900;
+}
+.qa-item {
+    margin-bottom: 50px;
+}
+.question {
+    margin-bottom: 20px;
+}
+
+.answer {
+    color: #fcec51;
+}
+
+.answer ul {
+    list-style: none;
+}
+
+.qa-item:last-child .answer li {
+    margin-bottom: 20px;
+}
+
+/* Responsive */
+@media(max-width:768px) {
+    .app-header {
+        padding: 30px 0 10px;
+    }
+    .app-header img {
+        width: 250px;
+    }
+    .revelation-btn button {
+        background: #ffe61a;
+        border: 0;
+        border-radius: 8px;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 20px;
+        cursor: pointer;
+        box-shadow: 0 0 35px rgba(255, 255, 255, .4);
+        position: relative;
+        outline: none;
+        padding: 0 30px;
+    }
+    .revelation-btn button i {
+        display: block;
+        margin: 20px 0;
+    }
+    .films-qas {
+        font-size: 18px;
+    }
+}
